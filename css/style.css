@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+.user-options a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.carousel-item {
+    min-width: 300px;
+    margin-right: 20px;
+    position: relative;
+}
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+.carousel-item button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.now-showing, .showtimes, .cinema-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.movie, .showtime {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.movie img, .showtime img {
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.movie button, .showtime button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
