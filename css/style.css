@@ -1,98 +1,190 @@
+/* Style général */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
 }
+
+/* Header */
 header {
-    background-color: #333;
+    background-color: #343a40;
     color: white;
     padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.logo img {
-    height: 50px;
-    margin-left: 20px;
+
+header .logo img {
+    width: 120px;
 }
-.user-options a {
+
+header .user-options a {
     color: white;
-    margin: 0 10px;
+    margin-left: 15px;
     text-decoration: none;
 }
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+header .user-options a:hover {
+    color: #ccc;
 }
-nav ul li {
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
     margin-right: 20px;
 }
-nav ul li a {
+
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Carousel */
 .carousel {
     display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
+
+.carousel h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .carousel-item {
-    min-width: 300px;
-    margin-right: 20px;
     position: relative;
+    width: 300px; /* Largeur fixe pour les éléments du carousel */
+    height: 400px; /* Hauteur fixe pour les éléments du carousel */
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
 }
+
 .carousel-item img {
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    object-fit: cover;
 }
+
 .carousel-item button {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.now-showing, .showtimes, .cinema-info {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
+
+.carousel-item button:hover {
+    background-color: #0056b3;
 }
-.movie, .showtime {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+
+/* Now Showing Section */
+.now-showing {
+    padding: 50px 0;
+    background-color: #f1f1f1;
 }
-.movie img, .showtime img {
-    height: 150px;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-.movie button, .showtime button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+
+.now-showing h2 {
+    margin-bottom: 40px;
     text-align: center;
 }
-footer a {
+
+.now-showing .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.now-showing .card:hover {
+    transform: scale(1.05);
+}
+
+.now-showing .card-title {
+    font-size: 1.25rem;
+}
+
+.now-showing .btn-primary {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.now-showing .btn-primary:hover {
+    background-color: #138496;
+}
+
+/* Showtimes Section */
+.showtimes {
+    padding: 50px 0;
+}
+
+.showtimes h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.showtime {
+    margin-bottom: 30px;
+}
+
+.showtime button {
+    background-color: #28a745;
+    border: none;
     color: white;
-    margin: 0 10px;
+    padding: 10px 20px;
+}
+
+.showtime button:hover {
+    background-color: #218838;
+}
+
+/* Cinema Info Section */
+.cinema-info {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cinema-info p {
+    margin-bottom: 10px;
+}
+
+.cinema-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cinema-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .useful-links a,
+footer .social-media a {
+    color: white;
+    margin-right: 15px;
     text-decoration: none;
+}
+
+footer .useful-links a:hover,
+footer .social-media a:hover {
+    text-decoration: underline;
 }
