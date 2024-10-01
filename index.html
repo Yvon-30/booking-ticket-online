@@ -10,7 +10,7 @@
 <body>
 
     <!-- Modal for Booking -->
-    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -29,8 +29,29 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
   
+    <!-- Modal (unique pour tous les films) -->
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieModalLabel">Détails du Film</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="movieImage" src="" class="img-fluid mb-3" alt="Image du Film">
+                    <p id="movieDescription"></p>
+                    <p id="movieActors"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <!-- <a id="moreDetailsLink" href="#" class="btn btn-primary">Voir plus de détails</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
@@ -67,25 +88,52 @@
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="images/R.jpeg" class="card-img-top" alt="Affiche de Movie 1">
+                        <img src="images/R.jpeg" class="card-img-top" alt="Affiche de Pirates of Caribbean">
                         <div class="card-body text-center">
-                            <button class="btn btn-primary">En savoir plus</button>
+                            <button class="btn btn-info" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#movieModal" 
+                                data-bs-title="Pirates of Caribbean"
+                                data-bs-description="Synopsis du Film 1..." 
+                                data-bs-actors="Acteurs : Acteur 1, Acteur 2, Acteur 3"
+                                data-bs-image="pirates-of-caribbean.jpg"
+                                data-bs-link="movie-details.html?movie=1">
+                                En savoir plus
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="images/horror.jpeg" class="card-img-top" alt="Affiche de Movie 2">
+                        <img src="images/horror.jpeg" class="card-img-top" alt="Affiche de A Classic Horror Story">
                         <div class="card-body text-center">
-                            <button class="btn btn-primary">En savoir plus</button>
+                            <button class="btn btn-info" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#movieModal" 
+                                data-bs-title="A Classic Horror Story"
+                                data-bs-description="Synopsis du Film 2..."
+                                data-bs-actors="Acteurs : Acteur A, Acteur B"
+                                data-bs-image="horror.jpg"
+                                data-bs-link="movie-details.html?movie=2">
+                                En savoir plus
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="card">
-                        <img src="images/Captain Marvel.jpeg" class="card-img-top" alt="Affiche de Movie 3">
+                        <img src="images/Captain Marvel.jpeg" class="card-img-top" alt="Affiche de Captain Marvel">
                         <div class="card-body text-center">
-                            <button class="btn btn-primary">En savoir plus</button>
+                            <button class="btn btn-info" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#movieModal" 
+                                data-bs-title="Captain Marvel"
+                                data-bs-description="Synopsis du Film 3..."
+                                data-bs-actors="Acteurs : Acteur X, Acteur Y"
+                                data-bs-image="captain-marvel.jpg"
+                                data-bs-link="movie-details.html?movie=3">
+                                En savoir plus
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -172,14 +220,14 @@
     <section class="cinema-info bg-light py-5 mt-5">
         <div class="container">
             <h2 class="text-center mb-4">Informations sur le cinéma</h2>
-            <p>Adresse : 123 Cinema Street, City, Country</p>
-            <p>Téléphone : +123 456 789</p>
+            <p>Adresse : Cotonou, Bénin</p>
+            <p>Téléphone : +229 01 02 03 04</p>
             <p>Email : contact@cinema.com</p>
-            <ul class="list-unstyled">
+            <!-- <ul class="list-unstyled">
                 <li>Salles de cinéma modernes</li>
                 <li>Équipements de pointe</li>
                 <li>Snacks et boissons</li>
-            </ul>
+            </ul> -->
         </div>
     </section>
     
