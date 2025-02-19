@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "titre": "Inception",
+      "image": "https://m.media-amazon.com/images/I/91Rc8cAmnAL._SL1500_.jpg",
+      "description": "Un voleur qui s'infiltre dans les rêves pour implanter des idées.",
+      "duree": "2h 28min",
+      "categorie": "Science-Fiction"
+    },
+    {
+      "id": 2,
+      "titre": "The Dark Knight",
+      "image": "https://m.media-amazon.com/images/I/91KkWf50SoL._SL1500_.jpg",
+      "description": "Batman affronte le Joker dans une lutte pour Gotham.",
+      "duree": "2h 32min",
+      "categorie": "Action"
+    },
+    {
+      "id": 3,
+      "titre": "The Matrix",
+      "image": "https://m.media-amazon.com/images/I/51EG732BV3L._SL1000_.jpg",
+      "description": "Un hacker découvre la réalité virtuelle qui contrôle le monde.",
+      "duree": "2h 16min",
+      "categorie": "Science-Fiction"
+    },
+    {
+      "id": 4,
+      "titre": "Pulp Fiction",
+      "image": "https://m.media-amazon.com/images/I/81UTs3sC5hL._SL1500_.jpg",
+      "description": "Des histoires entrelacées de crime et de rédemption."
+    },
+    {
+      "id": 5,
+      "titre": "Fight Club",
+      "image": "https://m.media-amazon.com/images/I/71YFxhhSRPL._SL1500_.jpg",
+      "description": "Un homme crée un club de combat pour échapper à sa vie monotone.",
+      "duree": "2h 34min",
+      "categorie": "Drame"
+    },
+    {
+      "id": 6,
+      "titre": "The Lord of the Rings: The Fellowship of the Ring",
+      "image": "https://m.media-amazon.com/images/I/71X6YzwV0gL._SL1500_.jpg",
+      "description": "Une quête pour détruire un anneau maléfique.",
+      "duree": "2h 58min",
+      "categorie": "Aventure"
+    }
+  ]
